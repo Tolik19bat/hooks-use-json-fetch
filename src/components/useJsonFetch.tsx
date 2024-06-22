@@ -1,10 +1,13 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 // Определяем тип для опций, которые можно передать в fetch
 type UseJsonFetchOptions = RequestInit;
 
 // Определяем сам хук, который принимает URL и опции
-function useJsonFetch<T>(url: string, opts?: UseJsonFetchOptions): [T | null, boolean, Error | null] {
+function useJsonFetch<T>(
+  url: string,
+  opts?: UseJsonFetchOptions
+): [T | null, boolean, Error | null] {
   // Состояние для данных, которые будут получены
   const [data, setData] = useState<T | null>(null);
   // Состояние для индикатора загрузки

@@ -1,10 +1,9 @@
-import './App.css'
-import DataComponent from './components/DataComponent'
-import ErrorComponent from './components/ErrorComponent'
-import LoadingComponent from './components/LoadingComponent'
+import "./App.css";
+import DataComponent from "./components/DataComponent";
+import ErrorComponent from "./components/ErrorComponent";
+import LoadingComponent from "./components/LoadingComponent";
 
 function App() {
-
   return (
     <>
       <h1>Data Component</h1>
@@ -14,7 +13,7 @@ function App() {
       <h1>Loading Component</h1>
       <LoadingComponent />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,10 +1,12 @@
-import React from 'react';
-import useJsonFetch from './useJsonFetch';
+import React from "react";
+import useJsonFetch from "./useJsonFetch";
 
 // Компонент для выполнения запроса на URL с долгой загрузкой
 const LoadingComponent: React.FC = () => {
   // Используем хук useJsonFetch для выполнения запроса и получения данных, флага загрузки и ошибки
-  const [data, loading, error] = useJsonFetch<{ status: string }>('http://localhost:7070/loading');
+  const [data, loading, error] = useJsonFetch<{ status: string }>(
+    "http://localhost:7070/loading"
+  );
 
   // Если данные загружаются, отображаем сообщение о загрузке
   if (loading) return <div>Loading...</div>;
